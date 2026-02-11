@@ -31,7 +31,7 @@ import Searchicon from "@/components/navbar/icon/Searchicon.vue";
       </div>
 
       <div class="navbar-end">
-        <button class="btn btn-neutral btn-outline" text-lg>登录</button>
+        <RouterLink :to="{name:'user-account-login-index'}" active-class="btn-active" class="btn btn-neutral btn-outline" text-lg>登录</RouterLink>
       </div>
 
     </nav>
@@ -48,32 +48,32 @@ import Searchicon from "@/components/navbar/icon/Searchicon.vue";
       <ul class="menu w-full grow">
         <!-- 首页 -->
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right flex h-14 items-center gap-2" data-tip="首页" my1="">
+          <RouterLink :to="{name:'homepage-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right flex h-14 items-center gap-2" data-tip="首页" my1="">
             <!-- 首页icon -->
             <Homepageicon/>
             <!-- whitespace-nowrap禁止换行 -->
             <span class="is-drawer-close:hidden whitespace-nowrap">首页</span>
-          </button>
+          </RouterLink>
         </li>
 
         <!-- 创作 -->
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right flex h-14 items-center gap-2" data-tip="创作" my1="">
+          <RouterLink :to="{name:'create-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right flex h-14 items-center gap-2" data-tip="创作" my1="">
             <!-- 创作icon -->
             <Creaticon/>
             <!-- whitespace-nowrap禁止换行 -->
             <span class="is-drawer-close:hidden whitespace-nowrap">创作</span>
-          </button>
+          </RouterLink>
         </li>
 
          <!-- 好友-->
         <li>
-          <button class="is-drawer-close:tooltip is-drawer-close:tooltip-right flex h-14 items-center gap-2" data-tip="好友" my1="">
+          <RouterLink :to="{name:'friend-index'}" active-class="menu-focus" class="is-drawer-close:tooltip is-drawer-close:tooltip-right flex h-14 items-center gap-2" data-tip="好友" my1="">
             <!-- 好友icon -->
             <Friendicon/>
             <!-- whitespace-nowrap禁止换行 -->
             <span class="is-drawer-close:hidden whitespace-nowrap">好友</span>
-          </button>
+          </RouterLink>
         </li>
 
       </ul>
